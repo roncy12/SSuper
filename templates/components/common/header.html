@@ -1,0 +1,62 @@
+<a href="#main-content" class="skip-to-main-link">{{lang 'header.skip_to_main'}}</a>
+{{#if banners.top}}
+<div class="banners" data-banner-location="top">
+    {{#each (limit banners.top_metadata 1)}}
+    <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-banner-id="{{this.banner-name}}">
+        <div data-event-type="promotion-click">
+            {{{this.content}}}
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/if}}
+<header class="header" role="banner">
+    <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+        <span class="mobileMenu-toggleIcon">Toggle menu</span>
+    </a>
+
+
+
+    <div class="header-container">
+        <h1 class="header-logo header-logo--{{theme_settings.logo-position}}">
+            {{> components/common/store-logo}}
+        </h1>
+         
+        <div class="custom-qsearch">
+            {{> components/common/quick-search}}
+        </div>
+
+        <div class="telnav-container">
+            <div class="talk-div-container">
+                <div class="text-img-content">
+                    <div>
+                        <p>Talk to a Scooter Expert</p>
+                        <h2>1-866-504-2878</h2>
+                    </div>
+                    <img src="https://cdn11.bigcommerce.com/s-b6salw7r81/product_images/uploaded_images/girl-ontalk.png?t=1644469315&_gl=1*1jg33o7*_ga*MTgzNTE5MzI1My4xNjE3Nzc3MjAy*_ga_WS2VZYPC6G*MTY0NDQ2OTI5NC42NzMuMS4xNjQ0NDY5Mjk3LjU3" alt="girl-ontalk">
+                </div>
+                <div class="schedule-content">
+                    <p><span class="blue-font">Sales:</span> 8am - 9pm (Mon - Fri EST)<br/>
+                    9am - 6pm (Sat - Sun EST)<br/>
+                    <span class="blue-font">Customer Service:</span> 9am - 5pm (Mon - Fri EST)</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+        <div class="header-logo header-logo--{{theme_settings.logo-position}}" style="display: none;">
+            {{> components/common/store-logo}}
+        </div>
+    <div class="navParent-container">    
+        <div class="nav-container">
+            <div class="navPages-container" id="menu" data-menu>
+                {{> components/common/navigation-menu}}
+            </div>
+            <div class="account-cart">
+                {{> components/common/navigation}}
+            </div>
+        </div>    
+    </div>
+</header>
+{{{region name="header_bottom--global"}}}
+{{{region name="header_bottom"}}}

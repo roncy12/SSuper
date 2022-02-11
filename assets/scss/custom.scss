@@ -1,0 +1,341 @@
+/*Homepage*/
+/* Header Section */
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto&display=swap');
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 801px) {
+.header-container{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    padding: 0.6rem 0px 0px;
+    .header-logo {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: auto;
+    }
+    .header-logo-image-unknown-size {
+        max-width: 337px;
+    }
+    .custom-qsearch .form-input {
+        border-color: #1b138c;
+        border-radius: 25px;
+        height: 3.5rem;
+        padding: 0.75rem 2rem;
+    }
+    .form-field {
+        margin: 1.5rem 0 0rem;
+    }
+    .custom-qsearch {
+        width: 33%;
+    }
+    .custom-qsearch .container{
+        padding: 0 2rem 0 3.5rem;
+    }
+    .telnav-container {
+        width: auto;
+        margin-top: 0.5rem;
+    }
+}
+.navUser{
+    display: none;
+}
+.account-cart .navUser {
+    display: inline-block;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+.navParent-container {
+    background: #1b138c;
+}
+nav.navUser .navUser-item a {
+    color: #fff;
+}
+.navUser-or{
+    color: #fff;
+}
+}
+
+
+.telnav-container{
+    .talk-div-container{
+        display: flex;
+        align-items: center;
+    }
+    .text-img-content {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .text-img-content img{
+        max-width: 85px;
+        width: 100%;
+    }
+    .text-img-content div {
+        line-height: 1.2;
+    }
+    .text-img-content p {
+        margin-bottom: 0;
+        color: #5b79c4;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .text-img-content h2 {
+        margin-top: 0;
+        color: #1b138c;
+    }
+
+    .schedule-content p {
+        margin: 0;
+        line-height: 1.2;
+    }
+    
+}
+
+.blue-font{
+    color: #5b79c4;
+}
+
+.navPages-container {
+    background: #1b138c;
+    nav ul li {
+        .navPages-action {
+            color: #fff;
+        }
+    }
+}
+
+// Homepage Content
+.home-body{
+    background: #e5e5e5;
+    margin-bottom: 0;
+    .productGrid{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .custom-qsearch {
+        display: none;
+    }
+    .telnav-container{
+        display: none;
+    }
+}
+@media screen and (min-width: 801px) {
+    .home-body .container {
+        max-width: 87%;
+        padding: 0;
+    }    
+    .heroCarousel-slide .heroCarousel-image-wrapper {
+        height: 24.25vw;
+    }
+}
+// Carousel
+@media screen and (min-width: 501px) {
+    .heroCarousel-slide .heroCarousel-image {
+        object-position: top;
+    }
+}
+
+// Custom Category
+.categ-content {
+    width: 99%;
+    margin: 0 auto;
+}
+.categ-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .categ-col div {
+        background: #333333;
+        text-align: center;
+        color: #fff;
+        padding: 1rem;
+    }
+
+    .categ-col div h2 {
+        color: #fff;
+        margin: 0;
+
+        @media screen and (max-width: 1080px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 937px) {
+            font-size: 18px;
+        }
+    }
+    .categ-col div p {
+        margin: 0;
+        font-size: 18px;
+        @media screen and (max-width: 937px) {
+            font-size: 16px;
+        }
+    }
+    .categ-col img{
+        width: 100%;
+    }
+}
+.top-seller h2 {
+    color: #333333;
+    font-size: 36px;
+    margin: 3.5rem 0;
+    font-weight: 800;
+}
+
+// Best Seller Section
+.home-body .productGrid {
+    display: flex;
+    flex-flow: row wrap;
+    @media screen and (min-width: 801px) {
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 800px) {
+        row-gap: 1rem;
+    }
+}
+
+.home-body .productGrid li {
+    background: #fff;
+    border-bottom: 3px solid #ff2400;
+    padding-bottom: 1.5rem;
+
+    @media screen and (min-width: 801px) {
+        width: 23%;
+    }
+    @media screen and (max-width: 800px) {
+        width: 48%;
+        margin: 0 auto;
+    }
+}
+.home-body .productGrid li .card {
+    margin-bottom: 0;
+
+}
+// LI Card BOdy
+.card-body {
+    text-align: center;
+}
+.card-title > a {
+    color: #222222;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+.card-title {
+    margin: 0 0 1rem;
+}
+p.card-text {
+    color: #aaaaaa;
+}
+.price-section.price-section--withoutTax {
+    font-family: 'Roboto';
+}
+span.price.price--withoutTax {
+    color: #1b138c;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+// Footer
+.need-help {
+    background: #333333;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 837px) {
+            padding: 2rem 2rem;
+            flex-direction: column;
+            row-gap: 1rem;
+    }
+}
+.need-help h4 {
+    margin: 0;
+    color: #fff;
+}
+.need-help a {
+    display: inline-block;
+    color: #fff;
+    background: red;
+    padding: 1rem 2.5rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+.footer-copyright {
+    padding: 1.5rem 0;
+    background: #e5e5e5;
+}
+.footer-copyright .powered-by {
+    text-align: center;
+    font-size: 18px;
+}
+.footer {
+    padding: 3rem 0 0;
+}
+footer.footer .container {
+    padding: 0;
+    max-width: 85%;
+}
+
+.spacing-bottom {
+    height: 80px;
+}
+
+ul.footer-info-list .labelname {
+    text-transform: uppercase;
+    color: #00001f;
+    font-weight: bold;
+}
+ul.footer-info-list li {
+    margin-left: 1rem;
+}
+
+.footer-info-heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto';
+}
+ul.footer-info-list li {
+    margin-left: 1rem;
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Roboto';
+}
+
+@media screen and (min-width: 551px) {
+    .footer-info-list {
+        list-style: disc;
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 801px) {
+    section.footer-info article {
+        width: 25%;
+    }
+}
