@@ -92,7 +92,7 @@
                 <ul class="footer-info-list">
                       <li class="labelname">Phone:</li>
                       <li>Call Us Toll Fee</li>
-                      <li>1-866-422-7178</li><br/>
+                      <li><a href="">1-866-422-7178</a></li><br/>
 
                       <li class="labelname">Location:</li>
                       <li>LLC 1217 East Colonial Drive,<br/>
@@ -137,3 +137,25 @@
     {{/if}}
     {{{region name="ssl_site_seal--global"}}}
 </footer>
+
+
+<script>
+    $(window).ready(function(){
+    var windowScreenSize = window.screen.width;
+    var telnav = document.getElementsByClassName("telnav-container");
+    var headerLogo = document.getElementsByClassName("header-logo"); 
+
+    setTimeout(function(){  
+        if(windowScreenSize <= 1160){
+            // $(telnav).insertAfter($(headerLogo));
+            $(telnav).css("display","none");
+            $(".header-container .telnav-container").css("display","block")
+            
+        }else{
+            // $(telnav).insertAfter($(".custom-qsearch"));
+
+        }
+    }, 1000);
+});
+    
+</script>
